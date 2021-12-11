@@ -1,0 +1,24 @@
+<mvc:View
+    controllerName="com.br.ui5tooling.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+
+                	<VBox height="100%">
+                    <FlexBox
+                      height="100%"
+                      alignItems="Center"
+				              justifyContent="Center">
+                        <Text text="Hello World {/name}" />
+                    </FlexBox>
+                  </VBox>
+
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
