@@ -1,0 +1,40 @@
+<Dialog
+  id="dialog"
+  class="sapUiContentPadding"
+  title="{i18n>popup.title}"
+  xmlns="sap.m"
+  xmlns:l="sap.ui.layout"
+  xmlns:f="sap.ui.layout.form"
+  titleAlignment="Center">
+  
+  <endButton>
+    <Button
+      text="{i18n>popup.close}"
+      type="Emphasized"
+      press=".handleCloseDialog" />
+  </endButton>
+
+  <f:SimpleForm
+    editable="true"
+    layout="ResponsiveGridLayout"
+    labelSpanXL="2"
+    labelSpanL="2"
+    labelSpanM="2"
+    labelSpanS="12"
+    adjustLabelSpan="false"
+    emptySpanXL="2"
+    emptySpanL="2"
+    emptySpanM="2"
+    emptySpanS="0"
+    columnsXL="1"
+    columnsL="1"
+    columnsM="1"
+    singleContainerFullSize="true">
+    
+    <Label text="{i18n>popup.input.label}" />
+    <Input
+      placeholder="{i18n>popup.input.placeholder}"
+      value="{/name}" />
+
+  </f:SimpleForm>
+</Dialog>

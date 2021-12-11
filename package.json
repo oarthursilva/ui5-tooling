@@ -1,7 +1,6 @@
 {
   "name": "ui5-tooling",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "start": "ui5 serve --config=ui5.yaml  --open index.html",
