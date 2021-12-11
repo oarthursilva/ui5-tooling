@@ -2,27 +2,46 @@
 
 UI5 Tooling with node using yarn.
 
-- [Getting Started](#getting-started)
+- [Starting this project](#starting-this-project) <br /> <br  />
+- [Getting Started with UI5 Tooling](#getting-started-with-ui5-tooling)
 - [Adapt project for `ui5-cli`](#adapt-project-for-ui5-cli)
 
 _First time on UI5 Tooling? Try [UI5 Tooling Getting Started](https://sap.github.io/ui5-tooling/pages/GettingStarted/)._
 
 #
 
-## Getting started
+### Starting this project
 
-### Starting a new project (opcional)
+Close this project on your workspace, and run statement `yarn install` to start the projedct installation.
 
-The easiest way to start a new UI5 project is to use a template generator like generator-easy-ui5.
+After, start the UI5 app with `yarn start`.
 
-<div style="text-align: right">
+> see all available scripts on `package.json` > `scripts`
+
+_in case you're facing issues while using `yarn`, see [Yarn Installation](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)_
+
+<p align="right">
   <i>
     <a href="#">Back to top</a>
   </i>
-</div>
+</p>
 
 #
-### Adapt project for `ui5-cli`
+
+### Getting Started with UI5 Tooling
+
+#### Starting a new project (opcional)
+
+The easiest way to start a new UI5 project is to use a template generator like generator-easy-ui5.
+
+<p align="right">
+  <i>
+    <a href="#">Back to top</a>
+  </i>
+</p>
+
+#
+#### Adapt project for `ui5-cli`
 
 (opcional) initialize the project by using `yarn init -y`.
 
@@ -79,8 +98,8 @@ ui5 add sap.ui.core sap.m sap.ui.table themelib_sap_fiori_3 # [...]
 $ yarn ui5 serve
 ```
 
-<div style="text-align: right">
+<p align="right">
   <i>
     <a href="#">Back to top</a>
   </i>
-</div>
+</p>
