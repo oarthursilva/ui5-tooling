@@ -4,20 +4,33 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "ui5 serve --config=ui5.yaml  --open index.html",
     "commit": "cz",
+    "lint": "eslint .",
     "prepare": "husky install",
-    "ui5": "ui5"
+    "ui5": "ui5",
+    "serve": "ui5 serve --config=ui5.yaml"
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
+    "@sap/eslint-plugin-ui5-jsdocs": "^2.0.5",
     "@ui5/cli": "^2.14.1",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^7.0.4"
+    "eslint": "^8.4.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "husky": "^7.0.4",
+    "ui5-middleware-livereload": "^0.5.8"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "ui5": {
+    "dependencies": [
+      "ui5-middleware-livereload"
+    ]
   }
 }

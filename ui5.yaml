@@ -2,3 +2,22 @@ specVersion: '2.6'
 metadata:
   name: ui5-tooling
 type: application
+resources:
+  configuration:
+    paths:
+      webapp: webapp
+framework:
+  name: OpenUI5
+  version: 1.96.0
+  libraries:
+    - name: sap.m
+    - name: sap.ui.core
+    - name: sap.ui.layout
+    - name: themelib_sap_fiori_3
+server:
+  customMiddleware:
+    - name: ui5-middleware-livereload
+      afterMiddleware: compression
+      configuration:
+        port: 35729
+        path: webapp
